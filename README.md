@@ -11,5 +11,18 @@ Template/guide on initializing and sql database and table upon startup (unexpect
         - "./sql-scripts:/docker-entrypoint-initdb.d"
 ```
 
-After this you should be done, you can use adminer to check your mysql database.
+After this you should be done.
+
+You can run and check too see the data from 'create-local-db.sql' being places into the data by running
+
+```
+docker-compose up
+```
+
+You can use Adminer to check your mysql database at
+
+```
+localhost:8080
+```
+
 The login/pasword is root/example
