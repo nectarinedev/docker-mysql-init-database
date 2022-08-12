@@ -4,13 +4,15 @@ CREATE DATABASE local_db;
 
 USE local_db;
 
-DROP TABLE IF EXISTS books;
+DROP TABLE IF EXISTS users;
 
-CREATE TABLE books (
-  id int(10) NOT NULL,
-  title varchar(30) NOT NULL DEFAULT '',
+CREATE TABLE users (
+  id         int(10) NOT NULL,
+  first_name varchar(30) NOT NULL DEFAULT '',
+  last_name  varchar(30) NOT NULL DEFAULT '',
+  email      varchar(30) NOT NULL DEFAULT '',
   PRIMARY KEY (id)
 );
 
-INSERT INTO books VALUES(1, 'Book 1');
-INSERT INTO books VALUES(2, 'Book 2');
+INSERT INTO users VALUES(1, 'Bob', 'Smith', 'bobsmith@example.com');
+INSERT INTO users VALUES(2, 'James', 'Mason', 'jamesmason@exmaple.com');
